@@ -75,7 +75,6 @@ func (g *Group) getLocally(key string) (ByteView, error) {
 	bytes, err := g.getter.Get(key)
 	if err != nil {
 		return ByteView{}, err
-
 	}
 	value := ByteView{b: cloneBytes(bytes)}
 	g.populateCache(key, value)
