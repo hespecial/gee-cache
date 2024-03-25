@@ -18,6 +18,7 @@
 !LICENSE
 
 !Makefile
+!*.sh
 
 # ...even if they are in subdirectories
 !*/
